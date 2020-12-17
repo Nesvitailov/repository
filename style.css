@@ -1,0 +1,94 @@
+* {
+    border: 1px dashed red;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px ;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px dashed red;
+}
+
+.header-logo {
+    height: 40px;
+    border: 2px dashed rgb(208, 236, 49);
+}
+
+.header-navigation {
+    border: 2px dashed rgb(68, 58, 209);
+    width: 100%;
+    height: 30px;
+}
+
+.header-lang{
+    height: 30px;
+    width: 40px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "main-header main-header main-header"
+    ". products ."
+    ". gallery ."
+    ". about ."
+    ". contacts .";
+
+}
+
+.main-header {
+    grid-area: main-header;
+    height: 90px;
+}
+
+.products {
+    grid-area: products;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "products-header products-header"
+    "vertebronol ."
+    ". afrodita"
+    "antymast .";
+}
+
+.products-header{
+    grid-area: products-header;
+}
+
+.vertebronol{
+    grid-area: vertebronol;
+}
+
+.afrodita{
+    grid-area: afrodita;
+}
+
+.antymast{
+    grid-area: antymast;
+}
+
+.gallery{
+    grid-area: gallery;
+}
+
+.about {
+    grid-area: about;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+footer{
+    border: 2px dashed rgb(156, 153, 199);
+}
